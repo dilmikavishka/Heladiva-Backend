@@ -1,12 +1,8 @@
 package lk.ijse.heladivaproject.util;
 
 
-import lk.ijse.heladivaproject.dto.ArticleDTO;
-import lk.ijse.heladivaproject.dto.ProductDTO;
-import lk.ijse.heladivaproject.dto.UserDTO;
-import lk.ijse.heladivaproject.entity.Article;
-import lk.ijse.heladivaproject.entity.Product;
-import lk.ijse.heladivaproject.entity.User;
+import lk.ijse.heladivaproject.dto.*;
+import lk.ijse.heladivaproject.entity.*;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
@@ -42,4 +38,39 @@ public class Mapping {
         return all.stream().map(this::toProductDTO).collect(Collectors.toList());
     }
 
+
+
+    public OrderDTO toOrderDTO(Order order) {
+        return mapper.map(order, OrderDTO.class);
+    }
+    public Order toOrder(OrderDTO orderDTO) {
+        return mapper.map(orderDTO, Order.class);
+    }
+    public List<OrderDTO> toOrderDTOS(List<Order> all) {
+        return all.stream().map(this::toOrderDTO).collect(Collectors.toList());
+    }
+
+
+    public OrderDetailsDTO toOrderDetailsDTO(OrderDetails orderDetails) {
+        return mapper.map(orderDetails, OrderDetailsDTO.class);
+    }
+    public OrderDetails toOrderDetails(OrderDetailsDTO orderDetailsDTO) {
+        return mapper.map(orderDetailsDTO, OrderDetails.class);
+    }
+    public List<OrderDetailsDTO> toOrderDetailsDTOS(List<OrderDetails> all) {
+        return all.stream().map(this::toOrderDetailsDTO).collect(Collectors.toList());
+    }
+
+    public Medicine toMedicine(MedicineDTO medicineDTO) {
+        return mapper.map(medicineDTO, Medicine.class);
+    }
+
+    public MedicineDTO toMedicineDTO(Medicine medicine) {
+        return mapper.map(medicine, MedicineDTO.class);
+    }
+
+
+    public List<MedicineDTO> toMedicineDTOS(List<Medicine> all) {
+        return all.stream().map(this::toMedicineDTO).collect(Collectors.toList());
+    }
 }

@@ -59,7 +59,7 @@ public class  User_Service_Impl implements UserService {
 
     @Override
     public ResponseEntity<String> update(UserDTO userDTO) {
-        System.out.println("Received UserDTO:");
+        System.out.println("📥 Received UserDTO:");
         System.out.println("UserID: " + userDTO.getUserId());
         System.out.println("Name: " + userDTO.getName());
         System.out.println("Email: " + userDTO.getEmail());

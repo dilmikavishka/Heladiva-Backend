@@ -25,25 +25,37 @@ import java.util.List;
 
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(securedEnabled = true, jsr250Enabled = true, prePostEnabled = true)
+@EnableGlobalMethodSecurity(
+        securedEnabled = true,
+        jsr250Enabled = true,
+        prePostEnabled = true
+)
 @RequiredArgsConstructor
 public class SecurityConfig {
+
     private final JwtAuthenticationFilter jwtAuthFilter;
     private final UserDetailsService userDetailsService;
 
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.cors(cors -> cors.configurationSource(corsConfigurationSource())).csrf(csrf -> csrf.disable())
+        http
+                .cors(cors -> cors.configurationSource(corsConfigurationSource())) // Enable CORS
+                .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
+//                        .requestMatchers("/api/article/getAll").permitAll()
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers("/api/article/admin/**").hasRole("Admin")
                         .requestMatchers("/api/article/**").hasAnyRole("Admin", "User")
                         .requestMatchers("/api/user/**").hasAnyRole("Admin", "User")
                         .requestMatchers("/api/product/admin/**").hasRole("Admin")
-                        .requestMatchers("/api/product/**").hasAnyRole("Admin", "User")
-                        .anyRequest().authenticated())
-
+                        .requestMatchers("/api/product/admin/**").hasRole("Admin")
+                        .requestMatchers("/api/order/admin/**").hasRole("Admin")
+                        .requestMatchers("/api/order/**").hasAnyRole("Admin", "User")
+                        .requestMatchers("/api/medicine/admin/**").hasRole("Admin")
+                        .requestMatchers("/api/medicine/**").hasAnyRole("Admin", "User")
+                        .anyRequest().authenticated()
+                )
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 

@@ -42,7 +42,7 @@ public class Arcticle_Service_Impl implements ArticleService {
     public ResponseEntity<String> save(ArticleDTO articleDTO) {
         Optional<User> optionalUser = userDao.findById(articleDTO.getAuthorId());
         if (!optionalUser.isPresent()) {
-            throw new EntityNotFoundException("User not found with id: " + optionalUser);
+            throw new EntityNotFoundException("Student not found with id: " + optionalUser);
         }
         Article article = mapping.toArticle(articleDTO);
         article.setAuthor(optionalUser.get());
@@ -53,6 +53,7 @@ public class Arcticle_Service_Impl implements ArticleService {
 
     @Override
     public ResponseEntity<String> update(ArticleDTO articleDTO) {
+        System.out.println();
         Optional<Article> optionalArticle = arcticleDao.findById(String.valueOf(articleDTO.getArticleId()));
         if (!optionalArticle.isPresent()) {
             throw new EntityNotFoundException("Article not found with id: " + articleDTO.getArticleId());
@@ -66,7 +67,10 @@ public class Arcticle_Service_Impl implements ArticleService {
         article.setUses(articleDTO.getUses());
         article.setDescription(articleDTO.getDescription());
         article.setHealthBenefits(articleDTO.getHealthBenefits());
-        article.setMapCoordinates(articleDTO.getMapCoordinates());
+        article.setSpringCoordinates(articleDTO.getSpringCoordinates());
+        article.setSummerCoordinates(articleDTO.getSummerCoordinates());
+        article.setAutumnCoordinates(articleDTO.getAutumnCoordinates());
+        article.setWinterCoordinates(articleDTO.getWinterCoordinates());
         article.setPublishedDate(articleDTO.getPublishedDate());
         article.setTags(articleDTO.getTags());
         article.setImageUrl(articleDTO.getImageUrl());

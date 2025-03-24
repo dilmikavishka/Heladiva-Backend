@@ -18,6 +18,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 @Service
 @RequiredArgsConstructor
 public class Auth_Service implements AuthenticationService {
@@ -27,9 +29,13 @@ public class Auth_Service implements AuthenticationService {
     private final JWTService jwtService;
     private final AuthenticationManager authenticationManager;
 
+
+
+
     @Override
     public JWTAuthResponse signIn(SignIn signInReq) {
         System.out.println(signInReq.getEmail());
+        // TODO: 2021-05-12
         authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(signInReq.getEmail(), signInReq.getPassword()));
         var userByEmail = userDAO.findByEmail(signInReq.getEmail()).orElseThrow(() -> new UsernameNotFoundException("Email not found"));
         System.out.println("User found: " + userByEmail.getName() + userByEmail.getUserId());
@@ -39,7 +45,6 @@ public class Auth_Service implements AuthenticationService {
                 .token(token)
                 .user(userDTO)
                 .build();
-
     }
 
 

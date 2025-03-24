@@ -23,7 +23,10 @@ import java.util.Date;
         @Column(columnDefinition = "TEXT")
         private String description;
         private String healthBenefits;
-        private String mapCoordinates;
+        private String springCoordinates;
+        private String summerCoordinates;
+        private String autumnCoordinates;
+        private String winterCoordinates;
 
         @ManyToOne
         @JoinColumn(name = "author_id", nullable = false)
@@ -31,6 +34,6 @@ import java.util.Date;
 
         private Date publishedDate;
         private String tags;
-        @Column(columnDefinition = "TEXT")
+    @Column(columnDefinition = "TEXT")
         private String ImageUrl;
     }

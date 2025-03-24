@@ -63,7 +63,9 @@ public class ArticleController {
     @GetMapping("/{id}")
     public ResponseEntity<ArticleDTO> getArticle(@PathVariable String id) {
         log.info("Fetching article with ID: {}", id);
+
         ArticleDTO articleDTO = articleService.getArticleById(id);
+
         return ResponseEntity.ok(articleDTO);
     }
 

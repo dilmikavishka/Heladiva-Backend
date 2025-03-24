@@ -22,4 +22,5 @@ public class OrderDetails {
 
     private Integer quantity;
     private Double price;
+
 }
