@@ -1,2 +1,18 @@
 2025-03-25T00:00:31.308+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-5] l.i.h.controller.ProductController       : Fetching all products
 2025-03-25T00:00:33.033+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-7] l.i.h.controller.ProductController       : Fetching all products
+2025-03-25T00:03:01.455+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-3] l.i.h.controller.ProductController       : Fetching all products
+2025-03-25T00:03:34.539+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-5] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
+2025-03-25T00:03:57.988+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-8] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
+2025-03-25T00:06:14.072+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-9] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
+2025-03-25T00:06:21.836+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-1] l.i.h.controller.MedicineController      : Fetching medicine with ID: MED-001
+2025-03-25T00:06:45.086+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-4] l.i.h.controller.MedicineController      : Fetching medicine with ID: MED-001
+2025-03-25T00:06:55.673+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-7] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
+2025-03-25T00:06:58.772+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-6] l.i.h.controller.MedicineController      : Fetching medicine with ID: MED-001
+2025-03-25T00:07:05.796+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-9] l.i.h.controller.MedicineController      : Fetching medicine with ID: MED-001
+2025-03-25T00:08:03.789+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-1] l.i.h.controller.ProductController       : Fetching all products
+2025-03-25T00:08:06.063+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-4] l.i.h.controller.ArticleController       : Fetching all articles
+2025-03-25T00:08:11.991+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-7] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
+2025-03-25T00:08:20.118+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-6] l.i.h.controller.MedicineController      : Fetching medicine with ID: MED-001
+2025-03-25T00:09:27.893+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-2] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
+2025-03-25T00:09:49.777+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-3] l.i.h.controller.ProductController       : Fetching all products
+2025-03-25T00:09:56.579+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-5] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
