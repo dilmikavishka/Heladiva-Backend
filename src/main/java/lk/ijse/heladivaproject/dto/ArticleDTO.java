@@ -40,6 +40,7 @@ public class ArticleDTO {
     private String authorId;
     private Date publishedDate;
 
+
     private String tags;
     @Pattern(regexp = "^(http|https)://.*$", message = "Invalid image URL format.")
     private String ImageUrl;

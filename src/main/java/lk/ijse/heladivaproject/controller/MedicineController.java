@@ -18,7 +18,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/medicine")
 @RequiredArgsConstructor
-@CrossOrigin("http://localhost:63342")
+@CrossOrigin("http://localhost:63343")
 public class MedicineController {
     private static final Logger log = LoggerFactory.getLogger(MedicineController.class);
     public final MedicineService medicineService;

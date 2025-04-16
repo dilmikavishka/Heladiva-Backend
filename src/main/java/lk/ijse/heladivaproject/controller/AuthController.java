@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:63342")
+@CrossOrigin(origins = "http://localhost:63343")
 @RequiredArgsConstructor
 public class AuthController {
     private static final Logger log = LoggerFactory.getLogger(AuthController.class);

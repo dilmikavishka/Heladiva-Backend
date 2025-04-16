@@ -32,7 +32,6 @@ public class Order_Service_Impl implements OrderService {
     private final OrderDetailsDao orderDetailsDao;
     private final UserDao userDao;
     private final ProductDao productDao;
-    private final Mapping mapping;
     private final Mail emailService;
 
     private String generateNextOrderId() {
@@ -111,7 +110,7 @@ public class Order_Service_Impl implements OrderService {
                 }
                 Product product = optionalProduct.get();
 
-                // Check if stock is available
+
                 if (product.getStockAvailability() < orderDetailsDTO.getQuantity()) {
                     return ResponseEntity.status(HttpStatus.BAD_REQUEST)
                             .body("Insufficient stock for product: " + product.getName());
@@ -151,7 +150,7 @@ public class Order_Service_Impl implements OrderService {
         orderDTO.setTotalPrice(order.getTotalPrice());
         orderDTO.setStatus(order.getStatus());
 
-        // Setting additional fields
+
         orderDTO.setFirstName(order.getFirstName());
         orderDTO.setLastName(order.getLastName());
         orderDTO.setAddressLine1(order.getAddressLine1());

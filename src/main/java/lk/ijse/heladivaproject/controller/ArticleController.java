@@ -15,7 +15,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/article")
-@CrossOrigin(origins = "http://localhost:63342",exposedHeaders = "Authorization")
+@CrossOrigin(origins = "http://localhost:63343",exposedHeaders = "Authorization")
 @RequiredArgsConstructor
 public class ArticleController {
 

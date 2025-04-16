@@ -16,7 +16,7 @@ public class MedicineDTO {
 
     @NotBlank(message = "Medicine name cannot be empty.")
     @Pattern(regexp = "^[A-Za-z\\s]+$", message = "Medicine name must contain only letters and spaces.")
-    private String name;
+        private String name;
 
     @NotBlank(message = "Disease field cannot be empty.")
     @Pattern(regexp = "^[A-Za-z\\s,]+$", message = "Disease must contain only letters, spaces, and commas.")

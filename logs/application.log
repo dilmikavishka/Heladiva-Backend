@@ -1,18 +1,6 @@
-2025-03-25T00:00:31.308+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-5] l.i.h.controller.ProductController       : Fetching all products
-2025-03-25T00:00:33.033+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-7] l.i.h.controller.ProductController       : Fetching all products
-2025-03-25T00:03:01.455+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-3] l.i.h.controller.ProductController       : Fetching all products
-2025-03-25T00:03:34.539+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-5] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
-2025-03-25T00:03:57.988+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-8] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
-2025-03-25T00:06:14.072+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-9] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
-2025-03-25T00:06:21.836+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-1] l.i.h.controller.MedicineController      : Fetching medicine with ID: MED-001
-2025-03-25T00:06:45.086+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-4] l.i.h.controller.MedicineController      : Fetching medicine with ID: MED-001
-2025-03-25T00:06:55.673+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-7] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
-2025-03-25T00:06:58.772+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-6] l.i.h.controller.MedicineController      : Fetching medicine with ID: MED-001
-2025-03-25T00:07:05.796+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-9] l.i.h.controller.MedicineController      : Fetching medicine with ID: MED-001
-2025-03-25T00:08:03.789+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-1] l.i.h.controller.ProductController       : Fetching all products
-2025-03-25T00:08:06.063+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-4] l.i.h.controller.ArticleController       : Fetching all articles
-2025-03-25T00:08:11.991+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-7] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
-2025-03-25T00:08:20.118+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-6] l.i.h.controller.MedicineController      : Fetching medicine with ID: MED-001
-2025-03-25T00:09:27.893+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-2] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
-2025-03-25T00:09:49.777+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-3] l.i.h.controller.ProductController       : Fetching all products
-2025-03-25T00:09:56.579+05:30  INFO 9120 --- [Heladiva-Project] [http-nio-8080-exec-5] l.i.h.controller.MedicineController      : Fetching all medicines for common diseases
+2025-04-02T11:58:58.548+05:30  WARN 8828 --- [Heladiva-Project] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20h53m26s292ms27µs500ns).
+2025-04-02T11:59:01.884+05:30  INFO 8828 --- [Heladiva-Project] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-02T11:59:03.918+05:30  INFO 8828 --- [Heladiva-Project] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-02T11:59:03.925+05:30  INFO 8828 --- [Heladiva-Project] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-02T11:59:03.925+05:30  INFO 8828 --- [Heladiva-Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-02T11:59:03.937+05:30  INFO 8828 --- [Heladiva-Project] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
